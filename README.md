@@ -1,7 +1,8 @@
 # icloudpd-scripts
 
 [icloud-photos-downloader](https://github.com/icloud-photos-downloader/icloud_photos_downloader) is a great tool
-that I want to run regularly to maintain local copies of my iPhone photos and all the albums my wife and I create.
+that I want to run regularly to maintain local copies of my iPhone photos and all the albums my wife and I create
+-- including new albums without having to do anything.
 
 
 The system shown here uses environment variables for passwords and not the Python keyring library of icloudpd.  My credentials
@@ -14,10 +15,10 @@ own environment and user names.
 
 ## album-download.py
 
-This script downloads albums for my wife and myself.  It gets the list of albums from icloud, then downloads those that
-are not on an ignore list.  It sleeps for a few minutes after each album download as I think Apple closes the connection
-if you download too many photos at once.  If run with `-l` parameter it will only list the albums from each account, so
-this is a good way to test if your credentials are set up correctly.
+This script downloads albums for my wife and myself.  It gets the list of albums from iCloud, then downloads those that
+are not on an ignore list (so new albums are downloaded by default).  It sleeps for a few minutes after each album
+download as I think Apple closes the connection if you download too many photos at once.  If run with `-l` parameter it
+will only list the albums from each account, so this is a good way to test if your credentials are set up correctly.
 
 ## icloudpd-download.sh
 
