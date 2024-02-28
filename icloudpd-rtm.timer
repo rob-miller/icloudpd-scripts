@@ -1,0 +1,9 @@
+[Unit]
+Description=Run icloudpd-rtm.service every night (system is on GMT)
+
+[Timer]
+OnCalendar=*-*-* 05:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

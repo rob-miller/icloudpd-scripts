@@ -1,0 +1,6 @@
+[Unit]
+Description=Run icloudpd download script nightly for rtm and jcm
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/icloudpd-download.sh
